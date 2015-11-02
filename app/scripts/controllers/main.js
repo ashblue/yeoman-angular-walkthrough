@@ -2,10 +2,10 @@
 
 /**
  * @ngdoc function
- * @name yeomanAngularWalkthroughApp.controller:MainCtrl
+ * @name mytodoApp.controller:MainCtrl
  * @description
  * # MainCtrl
- * Controller of the yeomanAngularWalkthroughApp
+ * Controller of the mytodoApp
  */
 angular.module('mytodoApp')
   .controller('MainCtrl', function ($scope) {

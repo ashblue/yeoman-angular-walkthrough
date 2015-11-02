@@ -10,16 +10,26 @@ describe('Controller: MainCtrl', function () {
 
   // Initialize the controller and a mock scope
   beforeEach(inject(function ($controller, $rootScope) {
-    scope = $rootScope.$new();
+    scope = {};
     MainCtrl = $controller('MainCtrl', {
       $scope: scope
-      // place here mocked dependencies
     });
   }));
 
   it('no items at start', function () {
-    console.log(MainCtrl);
-    console.log(MainCtrl.scope);
-    expect(MainCtrl.scope.todos.length).toBe(0);
+    expect(scope.todos.length).toBe(0);
+  });
+
+  it('should add items to the list', function () {
+    scope.todo = { task: 'title 1' };
+    scope.addTodo();
+    expect(scope.todos.length).toBe(1);
+  });
+
+  it('should add then remove an item from the list', function () {
+    scope.todo = { task: 'title 1' };
+    scope.addTodo();
+    scope.removeTodo(0);
+    expect(scope.todos.length).toBe(0);
   });
 });

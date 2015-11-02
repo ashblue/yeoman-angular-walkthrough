@@ -2,9 +2,9 @@
 
 /**
  * @ngdoc overview
- * @name yeomanAngularWalkthroughApp
+ * @name mytodoApp
  * @description
- * # yeomanAngularWalkthroughApp
+ * # mytodoApp
  *
  * Main module of the application.
  */
