@@ -7,11 +7,16 @@
  * # MainCtrl
  * Controller of the yeomanAngularWalkthroughApp
  */
-angular.module('yeomanAngularWalkthroughApp')
-  .controller('MainCtrl', function () {
-    this.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
+angular.module('mytodoApp')
+  .controller('MainCtrl', function ($scope) {
+    $scope.todos = [];
+
+    $scope.addTodo = function () {
+      $scope.todos.push($scope.todo);
+      $scope.todo = {};
+    };
+
+    $scope.removeTodo = function (index) {
+      $scope.todos.splice(index, 1);
+    };
   });

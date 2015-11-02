@@ -3,7 +3,7 @@
 describe('Controller: MainCtrl', function () {
 
   // load the controller's module
-  beforeEach(module('yeomanAngularWalkthroughApp'));
+  beforeEach(module('mytodoApp'));
 
   var MainCtrl,
     scope;
@@ -17,7 +17,9 @@ describe('Controller: MainCtrl', function () {
     });
   }));
 
-  it('should attach a list of awesomeThings to the scope', function () {
-    expect(MainCtrl.awesomeThings.length).toBe(3);
+  it('no items at start', function () {
+    console.log(MainCtrl);
+    console.log(MainCtrl.scope);
+    expect(MainCtrl.scope.todos.length).toBe(0);
   });
 });

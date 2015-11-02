@@ -7,7 +7,7 @@
  * # AboutCtrl
  * Controller of the yeomanAngularWalkthroughApp
  */
-angular.module('yeomanAngularWalkthroughApp')
+angular.module('mytodoApp')
   .controller('AboutCtrl', function () {
     this.awesomeThings = [
       'HTML5 Boilerplate',

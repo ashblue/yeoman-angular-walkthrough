@@ -9,13 +9,14 @@
  * Main module of the application.
  */
 angular
-  .module('yeomanAngularWalkthroughApp', [
+  .module('mytodoApp', [
     'ngAnimate',
     'ngCookies',
     'ngResource',
     'ngRoute',
     'ngSanitize',
-    'ngTouch'
+    'ngTouch',
+    'ui.sortable'
   ])
   .config(function ($routeProvider) {
     $routeProvider
